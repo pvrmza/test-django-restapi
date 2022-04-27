@@ -32,3 +32,9 @@ Aplicacion en django para probar rest api con tocken jwt y una aplicacion javasc
 ```
    curl -H 'Accept: application/json; indent=4' -H 'Authorization: Token 53f115f5b2e79bed5f5a92515657f87b162c41ae' http://127.0.0.1:8000/incidente/
 ```
+- Para utilizar la aplicacion html/javascript
+```
+   http://127.0.0.1:8000/static/index.html
+```
+
+
