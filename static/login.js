@@ -15,11 +15,12 @@ function login() {
     "password": password
   }));
   xhttp.onreadystatechange = function () {
-    if (this.readyState == 4) {
+    if (this.readyState == 4 && this.status == 200) {
       const objects = JSON.parse(this.responseText);
       console.log(objects);
       if (objects['token'] ) {
         localStorage.setItem("jwt", objects['token']);
+        localStorage.setItem("username", username);
         Swal.fire({
           text: objects['message'],
           icon: 'success',
